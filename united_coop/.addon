@@ -1,0 +1,18 @@
+{
+    "name": "united-coop",
+    "sharedassets": "*.*",
+    
+    "depends": 
+    [
+        "base"
+    ],
+    
+    "gamemodes":
+    [
+        {
+         "name": "united-coop",
+         "title": "United Co-op",
+         "description": "A cooperative gamemode"
+        }
+    ]
+}

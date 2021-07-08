@@ -1,0 +1,94 @@
+// 
+// PistolAmmo : ItemBase 
+// 
+@PointClass editormodel( "models/pistol_ammobox.vmdl" ) 
+metadata
+{
+	entity_tool_name = "Small Pistol Ammo Box"
+	entity_tool_group = "Ammo"
+	entity_tool_tip = "Small ammo box for the pistol"
+}
+= uc_pistolammo : ""
+[
+	targetname(target_source) : "Name" : : "The name that other entities refer to this entity by."
+	parentname(target_destination) [ group="Hierarchy" ] : "Parent" : : "The name of this entity's parent in the movement hierarchy. Entities with parents move with their parent."
+	enable_shadows(boolean) [ group="Render Properties" ] : "Shadow Casting" : 1 : "Whether this entity should cast shadows or not"
+]
+
+// 
+// SmallMedkit : ItemBase 
+// 
+@PointClass editormodel( "models/medkit.vmdl" ) 
+metadata
+{
+	entity_tool_name = "Small Medkit"
+	entity_tool_group = "Health"
+	entity_tool_tip = "Small medkit box for players"
+}
+= uc_smallmedkit : ""
+[
+	targetname(target_source) : "Name" : : "The name that other entities refer to this entity by."
+	parentname(target_destination) [ group="Hierarchy" ] : "Parent" : : "The name of this entity's parent in the movement hierarchy. Entities with parents move with their parent."
+	enable_shadows(boolean) [ group="Render Properties" ] : "Shadow Casting" : 1 : "Whether this entity should cast shadows or not"
+]
+
+// 
+// SuitFlashlight : ItemBase 
+// 
+@PointClass = united_flashlight : ""
+[
+	targetname(target_source) : "Name" : : "The name that other entities refer to this entity by."
+	parentname(target_destination) [ group="Hierarchy" ] : "Parent" : : "The name of this entity's parent in the movement hierarchy. Entities with parents move with their parent."
+	enable_shadows(boolean) [ group="Render Properties" ] : "Shadow Casting" : 1 : "Whether this entity should cast shadows or not"
+]
+
+// 
+// Crossbow : WeaponBase 
+// 
+@PointClass editormodel( "weapons/rust_crossbow/rust_crossbow.vmdl" ) = uc_crossbow : ""
+[
+	targetname(target_source) : "Name" : : "The name that other entities refer to this entity by."
+	parentname(target_destination) [ group="Hierarchy" ] : "Parent" : : "The name of this entity's parent in the movement hierarchy. Entities with parents move with their parent."
+	enable_shadows(boolean) [ group="Render Properties" ] : "Shadow Casting" : 1 : "Whether this entity should cast shadows or not"
+]
+
+// 
+// DBShotgun : WeaponBase 
+// 
+@PointClass editormodel( "weapons/rust_pumpshotgun/rust_pumpshotgun.vmdl" ) = uc_doubleshotgun : ""
+[
+	targetname(target_source) : "Name" : : "The name that other entities refer to this entity by."
+	parentname(target_destination) [ group="Hierarchy" ] : "Parent" : : "The name of this entity's parent in the movement hierarchy. Entities with parents move with their parent."
+	enable_shadows(boolean) [ group="Render Properties" ] : "Shadow Casting" : 1 : "Whether this entity should cast shadows or not"
+]
+
+// 
+// Pistol : WeaponBase 
+// 
+@PointClass editormodel( "weapons/rust_pistol/rust_pistol.vmdl" ) = uc_pistol : ""
+[
+	targetname(target_source) : "Name" : : "The name that other entities refer to this entity by."
+	parentname(target_destination) [ group="Hierarchy" ] : "Parent" : : "The name of this entity's parent in the movement hierarchy. Entities with parents move with their parent."
+	enable_shadows(boolean) [ group="Render Properties" ] : "Shadow Casting" : 1 : "Whether this entity should cast shadows or not"
+]
+
+// 
+// Shotgun : WeaponBase 
+// 
+@PointClass editormodel( "weapons/rust_pumpshotgun/rust_pumpshotgun.vmdl" ) = uc_shotgun : ""
+[
+	targetname(target_source) : "Name" : : "The name that other entities refer to this entity by."
+	parentname(target_destination) [ group="Hierarchy" ] : "Parent" : : "The name of this entity's parent in the movement hierarchy. Entities with parents move with their parent."
+	enable_shadows(boolean) [ group="Render Properties" ] : "Shadow Casting" : 1 : "Whether this entity should cast shadows or not"
+]
+
+// 
+// SMG : WeaponBase 
+// 
+@PointClass editormodel( "weapons/rust_smg/rust_smg.vmdl" ) = uc_smg : ""
+[
+	targetname(target_source) : "Name" : : "The name that other entities refer to this entity by."
+	parentname(target_destination) [ group="Hierarchy" ] : "Parent" : : "The name of this entity's parent in the movement hierarchy. Entities with parents move with their parent."
+	enable_shadows(boolean) [ group="Render Properties" ] : "Shadow Casting" : 1 : "Whether this entity should cast shadows or not"
+]
+
