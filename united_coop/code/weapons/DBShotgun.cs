@@ -1,11 +1,11 @@
 ﻿using Sandbox;
 
 
-[Library( "uc_doubleshotgun", Title = "Double Barrel Shotgun" )]
+[Library( "uc_doubleshotgun", Title = "Sawed-Off Shotgun" )]
 [Hammer.EditorModel( "weapons/rust_pumpshotgun/rust_pumpshotgun.vmdl" )]
 partial class DBShotgun : WeaponBase
 { 
-	public override string ViewModelPath => "weapons/rust_pumpshotgun/v_rust_pumpshotgun.vmdl";
+	public override string ViewModelPath => "models/weapons/v_doublebarrel.vmdl";
 	public override float PrimaryRate => 1;
 	public override float SecondaryRate => 0;
 	public override AmmoType AmmoType => AmmoType.Buckshot;
@@ -17,7 +17,7 @@ partial class DBShotgun : WeaponBase
 	{
 		base.Spawn();
 
-		SetModel( "weapons/rust_pumpshotgun/rust_pumpshotgun.vmdl" );  
+		SetModel( "models/weapons/doublebarrel.vmdl" );  
 
 		AmmoClip = 2;
 	}

@@ -1,4 +1,21 @@
 // 
+// HealthStation : InteractiveBase 
+// 
+@PointClass editormodel( "models/healthstation.vmdl" ) 
+metadata
+{
+	entity_tool_name = "Health Station"
+	entity_tool_group = "Health"
+	entity_tool_tip = "Healing station for players"
+}
+= uc_healthstation : ""
+[
+	targetname(target_source) : "Name" : : "The name that other entities refer to this entity by."
+	parentname(target_destination) [ group="Hierarchy" ] : "Parent" : : "The name of this entity's parent in the movement hierarchy. Entities with parents move with their parent."
+	enable_shadows(boolean) [ group="Render Properties" ] : "Shadow Casting" : 1 : "Whether this entity should cast shadows or not"
+]
+
+// 
 // PistolAmmo : ItemBase 
 // 
 @PointClass editormodel( "models/pistol_ammobox.vmdl" ) 
